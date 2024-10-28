@@ -2,6 +2,7 @@ import numpy as np
 
 
 def compute_mse(b, w, data):
+<<<<<<< HEAD
     """
     Calcula o erro quadratico medio
     :param b: float - bias (intercepto da reta)
@@ -56,3 +57,4 @@ def fit(data, b, w, alpha, num_iterations):
         w_values.append(w)
 
     return b_values, w_values
+
