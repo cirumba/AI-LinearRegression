@@ -23,4 +23,5 @@ Suas conclusões considerando as questões do Exercício 1.
 Suas conclusões considerando as questões do Exercício 2.
 Documentação:
 Python 3
+Anaconda
 ipykernel

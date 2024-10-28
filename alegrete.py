@@ -9,12 +9,8 @@ def compute_mse(b, w, data):
     :param data: np.array - matriz com o conjunto de dados, x na coluna 0 e y na coluna 1
     :return: float - o erro quadratico medio
     """
-    total_error = 0
-    for i in range(len(data)):
-        x = data[i, 0]
-        y = data[i, 1]
-        total_error += (y - (w * x + b)) ** 2
-    return total_error / len(data)
+    total_error = np.mean((data[:, 1] - (w * data[:, 0] + b)) ** 2)
+    return total_error
 
 
 def step_gradient(b, w, data, alpha):
@@ -26,16 +22,10 @@ def step_gradient(b, w, data, alpha):
     :param alpha: float - taxa de aprendizado (a.k.a. tamanho do passo)
     :return: float,float - os novos valores de b e w, respectivamente
     """
-    b_gradient = 0
-    w_gradient = 0
     N = len(data)
-
-    for i in range(N):
-        x = data[i, 0]
-        y = data[i, 1]
-        b_gradient += -(2 / N) * (y - (w * x + b))
-        w_gradient += -(2 / N) * x * (y - (w * x + b))
-
+    b_gradient = -2 / N * np.sum(data[:, 1] - (w * data[:, 0] + b))
+    w_gradient = -2 / N * np.sum(data[:, 0] * (data[:, 1] - (w * data[:, 0] + b)))
+    
     new_b = b - (alpha * b_gradient)
     new_w = w - (alpha * w_gradient)
     
