@@ -10,8 +10,11 @@ def compute_mse(b, w, data):
 def step_gradient(b, w, data, alpha):
 
     N = len(data)
-    b_gradient = -2 / N * np.sum(data[:, 1] - (w * data[:, 0] + b))
-    w_gradient = -2 / N * np.sum(data[:, 0] * (data[:, 1] - (w * data[:, 0] + b)))
+    x = data[:, 0]
+    y = data[:, 1]
+
+    b_gradient = -2 / N * np.sum(y - (w * x + b))
+    w_gradient = -2 / N * np.sum(x * (y - (w * x + b)))
     
     new_b = b - (alpha * b_gradient)
     new_w = w - (alpha * w_gradient)

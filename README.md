@@ -4,17 +4,16 @@
 Turma da Manha (A)
 
 Guilherme de Sousa Cirumbolo - 330049
-Eduardo Camozzato Fonte - 
 Pedro Marhofer Alles - 
 
 Valores iniciais:
 
-b
-w
-valores de alpha
-num_iterations
+b = 0
+w = 0
+valores de alpha = 
+num_iterations = 1000000
 
-Melhor erro quadrático médio:
+Melhor erro quadrático médio: 8.5277081 (1.000.000 iteracoes)
 
 Análise dos datasets: (quantas classes, quantas amostras, qual o tamanho das imagens)
 (altura x largura x canais de cor)
