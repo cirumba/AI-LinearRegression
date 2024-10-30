@@ -2,8 +2,8 @@
 
 Turma da Manha (A)
 
-- Guilherme de Sousa Cirumbolo - 330049
-- Pedro Marhofer Alles - 326188
+Guilherme de Sousa Cirumbolo - 00330049
+Pedro Marhofer Alles - 00326188
 
 ## Linear Regression - alegrete.ipynb
 
