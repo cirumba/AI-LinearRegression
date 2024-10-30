@@ -3,7 +3,7 @@
 
 Turma da Manha (A)
 
-Guilherme de Sousa Cirumbolo - 00330049
+Guilherme de Sousa Cirumbolo - 00330049\n
 Pedro Marhofer Alles - 00326188
 
 Valores iniciais:
